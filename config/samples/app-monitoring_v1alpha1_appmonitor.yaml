@@ -1,0 +1,7 @@
+apiVersion: app-monitoring.galexrt.moe/v1alpha1
+kind: AppMonitor
+metadata:
+  name: appmonitor-sample
+spec:
+  # Add fields here
+  foo: bar

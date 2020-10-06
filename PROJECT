@@ -1,0 +1,7 @@
+domain: galexrt.moe
+repo: github.com/galexrt/application-monitoring-operator
+resources:
+- group: app-monitoring
+  kind: AppMonitor
+  version: v1alpha1
+version: "2"

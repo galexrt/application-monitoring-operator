@@ -1,0 +1,24 @@
+# permissions for end users to edit appmonitors.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: appmonitor-editor-role
+rules:
+- apiGroups:
+  - app-monitoring.galexrt.moe
+  resources:
+  - appmonitors
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - app-monitoring.galexrt.moe
+  resources:
+  - appmonitors/status
+  verbs:
+  - get
